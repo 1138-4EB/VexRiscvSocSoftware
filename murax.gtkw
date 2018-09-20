@@ -1,0 +1,73 @@
+[*]
+[*] GTKWave Analyzer v3.3.95 (w)1999-2018 BSI
+[*] Tue Sep 11 23:31:57 2018
+[*]
+[dumpfile] "/src/obj/file_name.vcd"
+[dumpfile_mtime] "Tue Sep 11 23:06:04 2018"
+[dumpfile_size] 195951776
+[savefile] "/src/murax.gtkw"
+[timestart] 0
+[size] 1366 711
+[pos] -1 -1
+*-34.449421 25250000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_murax.
+[treeopen] tb_murax.murax.
+[treeopen] tb_murax.murax.system_cpu.
+[treeopen] tb_murax.murax.system_uartctrl.uartctrl_1.
+[sst_width] 210
+[signals_width] 250
+[sst_expanded] 1
+[sst_vpaned_height] 279
+@200
+-tb_murax
+@28
+tb_murax.asyncreset
+@22
+tb_murax.gpioa_read[31:0]
+@23
+tb_murax.gpioa_write[31:0]
+@22
+tb_murax.gpioa_writeenable[31:0]
+@28
+tb_murax.jtag_tck
+tb_murax.jtag_tdi
+tb_murax.jtag_tdo
+tb_murax.jtag_tms
+tb_murax.mainclk
+tb_murax.uart_rxd
+tb_murax.uart_txd
+@200
+-system_uartctrl
+@28
+tb_murax.murax.system_uartctrl.io_uart_rxd
+tb_murax.murax.system_uartctrl.io_uart_txd
+tb_murax.murax.system_uartctrl.io_interrupt
+tb_murax.murax.system_cpu.csrplugin_mstatus_mie
+@200
+-streamfifo_2
+@22
+tb_murax.murax.system_uartctrl.streamfifo_2.io_push_payload[7:0]
+@28
+tb_murax.murax.system_uartctrl.streamfifo_2.io_push_valid
+tb_murax.murax.system_uartctrl.streamfifo_2.io_pop_valid
+tb_murax.murax.system_uartctrl.streamfifo_2.io_pop_ready
+@22
+tb_murax.murax.system_uartctrl.streamfifo_2.io_pop_payload[7:0]
+@200
+-uartctrl_1
+@22
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.io_read_payload[7:0]
+@28
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.io_read_valid
+@22
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.statemachine_shifter[7:0]
+@28
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.bittimer_tick
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.bittimer_counter[2:0]
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.io_rxd
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.sampler_value
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.sampler_tick
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.sampler_samples_1
+tb_murax.murax.system_uartctrl.uartctrl_1.rx.sampler_samples_2
+[pattern_trace] 1
+[pattern_trace] 0

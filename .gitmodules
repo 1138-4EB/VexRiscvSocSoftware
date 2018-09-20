@@ -1,0 +1,6 @@
+[submodule "VexRiscv"]
+	path = VexRiscv
+	url = https://github.com/1138-4EB/VexRiscv
+[submodule "VexRiscvSocSoftware"]
+	path = VexRiscvSocSoftware
+	url = https://github.com/1138-4EB/VexRiscvSocSoftware
