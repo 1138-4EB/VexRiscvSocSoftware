@@ -13,6 +13,7 @@
 #include "interrupt.h"
 #include "gpio.h"
 #include "uart.h"
+#include "axis.h"
 
 #define CORE_HZ 12000000
 
@@ -23,6 +24,6 @@
 #define TIMER_B ((Timer_Reg*)0xF0020050)
 #define UART      ((Uart_Reg*)(0xF0010000))
 #define UART_SAMPLE_PER_BAUD 5
-
+#define AXIS      ((AXIS_Reg*)(0xF0030000))
 
 #endif /* BRIEY_H_ */
