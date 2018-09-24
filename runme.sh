@@ -13,8 +13,8 @@ sbt "run-main vexriscv.demo.MuraxWithRamInit"
 cp Murax.vhd ../vhdl/srcs/
 
 cd ../vhdl/test/py
-#python3 sim.py -v
-python3 sim.py -v -g --gtkwave-fmt=vcd
+python3 sim.py -v
+#python3 sim.py -v -g --gtkwave-fmt=vcd
 
 exit 0
 

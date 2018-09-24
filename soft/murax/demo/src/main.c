@@ -21,25 +21,14 @@ void main() {
   UART->STATUS = 2; //Enable RX interrupts
   UART->DATA = 'A';
 
-  uint32_t x;
-  int i;
-  for (i=0; i<5; i++) {
+  while(1){
+    for(uint32_t idx = 0;idx < 50;idx++) asm volatile("");
     while(AXIS->IN_VALID==0) { asm volatile(""); }
     AXIS->OUT_DATA = 3 * AXIS->IN_DATA;
     AXIS->OUT_VALID = 0xFFFF;
     while(AXIS->OUT_VALID!=0) { asm volatile(""); }
     AXIS->IN_READY = 0xFFFF;
     while(AXIS->IN_READY!=0) { asm volatile(""); }
-  }
-
-  volatile uint32_t a = 1, b = 2, c = 3;
-  uint32_t result = 0;
-
-  while(1){
-    result += a;
-    result += b + c;
-    for(uint32_t idx = 0;idx < 50;idx++) asm volatile("");
-    GPIO_A->OUTPUT = (GPIO_A->OUTPUT & ~0x3F) | ((GPIO_A->OUTPUT + 1) & 0x3F);  //Counter on LED[5:0]
   }
 
 }
